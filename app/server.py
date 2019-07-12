@@ -9,10 +9,16 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1-EUgYdL06ckEOM9cf-GJSkLznWFYykEp'
+export_file_name = 'export_model.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['ALSEDA Stool', 'BESTÅ storage system', 'BRANÄS Basket', 'DRAGAN- Soap dispenser', 'FRIHETEN 1-seat sofa', 
+           'HABITAT gala glass table', 'HENRIKSDAL Chair', 'INGEFÄRA Plant pot with saucer', 'KAFFEBÖNA Plant pot ', 
+           'KALLAX Shelving unit', 'LACK Coffee table ', 'LANDSKRONA 1-seat sofa', 'LAUTERS Floor lamp', 'LIVSVERK Vase', 
+           'MARJUN curtains', 'MARTIN Chair', 'MOSJÖ TV bench', 'MUSKAN Shelving unit', 'NOCKEBY 2-seat sofa', 
+           'RÅDIG Espresso maker', 'RIBBA Frame', 'RINGBLOMMA Roman blind', 'RINNIG Soap dispenser', 'SALMI Glass Table', 
+           'SAMVERKA Decoration', 'SANDARED Pouffe ', 'STABBIG Decoration', 'STOENSE Rug', 'VIMLE 2-seat sofa']
+
 path = Path(__file__).parent
 
 app = Starlette()
