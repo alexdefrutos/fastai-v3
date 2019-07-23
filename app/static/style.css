@@ -44,19 +44,19 @@ button.choose-file-button {
     height: 40px;
     border-radius: 2px;
     background-color: #ffffff;
-    border: solid 1px #afe4e5;
+    border: solid 1px #afe4e1;
     font-size: 13px;
-    color: #000000;
+    color: #000001;
 }
 
 button.analyze-button {
     width: 200px;
     height: 40px;
-    border: solid 1px #afe4e5;
+    border: solid 1px #afe4e1;
     border-radius: 2px;
-    background-color: #afe4e5;
+    background-color: #afe4e1;
     font-size: 13px;
-    color: #000000;
+    color: #000001;
 }
 
 button:focus {
