@@ -70,7 +70,10 @@ async def analyze(request):
     
     prob=outputs[pred_idx]*100 #new
     prob.item() #new
-    return JSONResponse({'result': "{} (prob={:2.0f}%)".format(pred_class,prob)}) #return JSONResponse({'result': str(prediction)})
+    if prob.item() <= 50: 
+           return JSONResponse({"I can't identify the object"})
+    else:
+           return JSONResponse({'result': "{} (prob={:2.0f}%)".format(pred_class,prob)}) #return JSONResponse({'result': str(prediction)})
 
 
 if __name__ == '__main__':
